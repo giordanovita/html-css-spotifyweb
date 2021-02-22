@@ -1,0 +1,44 @@
+body{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.upgrade{
+  width: 85%;
+  height: 15vh;
+  background-color: rgb(8, 11, 18);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.upgrade span a{
+  color: white;
+  border:1px solid white;
+  border-radius: 15px;
+  padding: 6px 20px;
+  text-decoration: none;
+}
+
+.side-action-nav{
+  min-width: 220px;
+  height: 85vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.music-player{
+  width: 100%;
+  height: 15vh;
+  background-color: grey;
+  z-index: 999;
+}
