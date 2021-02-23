@@ -13,6 +13,10 @@ body{
 a{
   text-decoration: none;
 }
+
+ul{
+  list-style-type: none;
+}
 /* regole header */
 
 .row:after{
@@ -36,6 +40,49 @@ a{
   height: 85vh;
   background-color: rgb(0, 0, 0);
   float: left;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  width: 100px;
+  padding: 15px 0;
+}
+.aside-mainactions img{
+  width: 20px;
+}
+
+.aside-mainactions span{
+  vertical-align:super;
+  font-size: 13px;
+}
+
+.plus{
+  font-size: 30px;
+  color:black;
+  padding:0 8px;
+  background-color:rgb(163, 163, 163);
+}
+
+.ad-play{
+  vertical-align:super;
+  padding-left: 7px;
+}
+
+.playlist-mother{
+  flex-grow: 1;
+}
+
+.playlist-items{
+  padding:7px 0;
+  font-size: 10px;
+}
+
+.aside-nav a{
+  color:rgb(163, 163, 163);
+  font-weight: 600;
+  font-size: 10px;
 }
 
 .music-library{
@@ -73,7 +120,7 @@ a{
   display:flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 40px 0;
+  padding: 20px 0 30px 0;
 
 }
 
@@ -89,13 +136,17 @@ a{
 .anteprima{
   width: 170px;
   min-height: 170px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   list-style-type: none;
   text-align: center;
 }
 
 .anteprima>img{
 width: 100%;
+}
+
+.circle-img{
+  border-radius: 100%;
 }
 
 .anteprima h4{
@@ -107,12 +158,60 @@ width: 100%;
   font-weight:600 ;
 }
 
-.ad{
 
-}
 
 .music-player{
   width: 100%;
   height: 15vh;
   background-color: rgb(40, 40, 40);
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.left-side{
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+}
+
+.left-side img{
+  width: 20%;
+  padding:0 15px;
+}
+
+.left-side-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side-icons ul{
+  padding-left: 50px;
+}
+
+.left-side-icons ul li{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.left-side-icons ul li a{
+  color: rgb(163, 163, 163)
+}
+
+.center-side{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-play li{
+  display: inline-block;
+}
+
+.input-play a{
+  font-size: 20px;
+  color: rgb(255, 255, 255)
+}
+
+.input-play .play{
+  font-size: 30px;
 }

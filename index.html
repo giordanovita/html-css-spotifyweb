@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="main.css">
     <title>SpotifyWeb</title>
   </head>
@@ -14,6 +15,48 @@
       <div class="row">
 
         <nav class="aside-nav">
+          <img class="logo" src="img/logo.svg" alt="">
+          <ul class="aside-mainactions">
+            <li>
+              <a href="#">
+                <img src="img/home.svg" alt="">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                  <img src="img/search.svg" alt="">
+                  <span>Cerca</span>
+                </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/libreria.svg" alt="">
+                <span>La tua libreria</span>
+              </a>
+            </li>
+          </ul>
+
+          <h3>PLAYLIST</h3>
+          <a href="#">
+            <span class="plus">+</span>
+            <span class="ad-play">Crea Playlist</span>
+          </a>
+
+          <ul class="playlist-mother">
+            <li class="playlist-items"><a href="#">Nome Playlist</a></li>
+            <li class="playlist-items"><a href="#">Nome Playlist</a></li>
+            <li class="playlist-items"><a href="#">Nome Playlist</a></li>
+            <li class="playlist-items"><a href="#">Nome Playlist</a></li>
+            <li class="playlist-items"><a href="#">Nome Playlist</a></li>
+            <li class="playlist-items"><a href="#">Nome Playlist</a></li>
+            <li class="playlist-items"><a href="#">Nome Playlist</a></li>
+          </ul>
+
+          <div class="user-profile">
+            <span><a href="#">Installa app</a></span>
+
+          </div>
 
         </nav>
 
@@ -78,20 +121,23 @@
             <h4>Release Radar</h4>
           </li>
           <li class="anteprima">
-            
             <img src="img/mixdaily.jpeg" alt="">
             <h4>Daily Mix 1</h4>
           </li>
         </ul>
 
+        <h2>Artisti più popolari</h2>
+        <span class="small-gray ad">Più ascolti, più accurati saranno i suggerimenti</span>
         <ul class="music-selection two">
 
 
           <li class="anteprima">
-
+            <img class="circle-img" src="img/youg.jpeg" alt="">
+            <h4>Lana del Rey</h4>
           </li>
           <li class="anteprima">
-
+            <img class="circle-img" src="img/einaudi.jpeg" alt="">
+            <h4>Ludovico Einaudi</h4>
           </li>
         </ul>
         </div>
@@ -107,6 +153,35 @@
     <!-- barra inferiore con riproduzione musicale e barre d progressione -->
     <footer>
       <div class="music-player">
+
+        <div class="left-side">
+          <img src="img/sinister.jpeg" alt="">
+          <div class="left-side-text">
+            <h4>Sinister</h4>
+            <span class="small-gray">Brano Nome</span>
+          </div>
+          <div class="left-side-icons">
+            <ul>
+              <li><a href="#"><i class="far fa-heart"></i></a></li>
+              <li><a href="#"><i class="far fa-folder"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="center-side">
+          <div class="input-play">
+            <ul>
+              <li><a href="#"><i class="fas fa-random"></i></a></li>
+              <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+              <li><a href="#"><i class=" play far fa-play-circle"></i></a></li>
+              <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+              <li><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+            </ul>
+
+          </div>
+
+
+        </div>
 
       </div>
 
