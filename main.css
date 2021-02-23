@@ -1,44 +1,118 @@
-body{
+/* regole generali */
+*{
 margin:0;
 padding: 0;
 box-sizing: border-box;
 }
 
-header{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
-.upgrade{
-  width: 85%;
-  height: 15vh;
+
+a{
+  text-decoration: none;
+}
+/* regole header */
+
+.row:after{
+  content: "";
+  clear:both;
+  display: table;
+}
+
+.barra-upgrade{
+  width:calc(100% - 250px);;
+  height: 10vh;
   background-color: rgb(8, 11, 18);
+  float: right;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 }
 
-.upgrade span a{
-  color: white;
-  border:1px solid white;
-  border-radius: 15px;
-  padding: 6px 20px;
-  text-decoration: none;
-}
-
-.side-action-nav{
-  min-width: 220px;
+.aside-nav{
+  width:250px;
   height: 85vh;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
+  background-color: rgb(0, 0, 0);
+  float: left;
+}
+
+.music-library{
+  float: right;
+  width:calc(100% - 250px);
+  height: 75vh;
+  overflow-y: scroll;
+  background-color: rgb(20, 25, 34);
+
+}
+
+.music-library h2{
+  color: white;
+  padding-left: 12px;
+}
+
+.appsections{
+  padding: 20px;
+  text-align: center;
+}
+
+.appsections li{
+  display: inline-block;
+}
+
+.appsections li a{
+  color:rgb(125, 127, 132);
+  padding: 0 8px;
+  font-size: 13px;
+  font-weight:bold ;
+
+}
+
+.music-selection{
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px 0;
+
+}
+
+.two{
+  justify-content: flex-start;
+
+}
+
+.two .anteprima, .ad{
+  margin-left: 12px;
+}
+
+.anteprima{
+  width: 170px;
+  min-height: 170px;
+  border: 1px solid black;
+  list-style-type: none;
+  text-align: center;
+}
+
+.anteprima>img{
+width: 100%;
+}
+
+.anteprima h4{
+  padding: 10px 0 7px 0;
+}
+.small-gray{
+  color:rgb(125, 127, 132);
+  font-size: 12px;
+  font-weight:600 ;
+}
+
+.ad{
+
 }
 
 .music-player{
   width: 100%;
   height: 15vh;
-  background-color: grey;
-  z-index: 999;
+  background-color: rgb(40, 40, 40);
 }
