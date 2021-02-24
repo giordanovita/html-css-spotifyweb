@@ -26,7 +26,7 @@ ul{
 }
 
 .barra-upgrade{
-  width:calc(100% - 250px);;
+  width:calc(100% - 250px);
   height: 10vh;
   background-color: rgb(8, 11, 18);
   float: right;
@@ -49,6 +49,7 @@ ul{
 .barra-upgrade span:hover{
   transform: scale(1.1);
 }
+
 .aside-nav{
   width:250px;
   height: 85vh;
@@ -72,11 +73,35 @@ ul{
   font-size: 13px;
 }
 
+.aside-mainactions li:first-child span{
+  color: white;
+}
+
+.aside-mainactions li:first-child:before{
+  content: "";
+  border-left: 2.5px solid rgb(173, 255, 47);
+  border-radius: 1px;
+  width: 50%;
+  vertical-align: top;
+}
+
+.aside-nav ul{
+  padding: 10px 0;
+}
+
+.newplaylist{
+  padding-top: 10px;
+}
+
 .plus{
   font-size: 30px;
   color:black;
   padding:0 8px;
   background-color:rgb(163, 163, 163);
+}
+
+.plus:hover{
+  background-color: white;
 }
 
 .ad-play{
@@ -86,6 +111,7 @@ ul{
 
 .playlist-mother{
   flex-grow: 1;
+  overflow-y:auto;
 }
 
 .playlist-items{
@@ -97,7 +123,6 @@ ul{
   width: 90%;
   padding-bottom: 6px;
   border-bottom:  1px solid rgb(163, 163, 163);
-
 }
 
 .user-profile img{
@@ -112,6 +137,7 @@ ul{
   display: flex;
   align-items: center;
 }
+
 .profile-name{
   font-size: 15px;
   font-weight: bold;
@@ -125,6 +151,10 @@ ul{
   font-size: 10px;
 }
 
+.aside-nav a:hover{
+  color:white;
+}
+
 .fa-arrow-alt-circle-down{
   margin-right: 6px;
 }
@@ -133,8 +163,9 @@ ul{
   float: right;
   width:calc(100% - 250px);
   height: 75vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   background-color: rgb(20, 25, 34);
+  padding-bottom: 94px;
 }
 
 .music-library h2{
@@ -149,6 +180,7 @@ ul{
 
 .appsections li{
   display: inline-block;
+
 }
 
 .appsections li a{
@@ -156,7 +188,21 @@ ul{
   padding: 0 8px;
   font-size: 13px;
   font-weight:bold ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.appsections li a:hover{
+  color: white;
+}
+
+.appsections li:first-child a::after{
+  content: "";
+  border-bottom: 2.5px solid rgb(173, 255, 47);
+  border-radius: 1px;
+  margin-top: 6px;
+  width: 40%;
 }
 
 .music-selection{
@@ -168,7 +214,6 @@ ul{
 
 .two{
   justify-content: flex-start;
-
 }
 
 .two .anteprima, .ad{
@@ -183,12 +228,40 @@ ul{
   text-align: center;
 }
 
-.anteprima>img{
+.anteprima .img-box img{
 width: 100%;
 }
 
+.anteprima .img-box{
+  position: relative;
+}
+.overlay-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-img a{
+  font-size: 70px;
+  color: white;
+}
+
+
+.anteprima .img-box:hover .overlay-img {
+  opacity: 1;
+}
+
 .circle-img{
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .anteprima h4{
@@ -205,11 +278,16 @@ width: 100%;
 
 .music-player{
   width: 100%;
-  height: 15vh;
+  height: 94px;
   background-color: rgb(40, 40, 40);
   display: flex;
   justify-content: space-between;
   align-items:center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index: 900;
 }
 
 .left-side{
@@ -313,6 +391,20 @@ width: 100%;
    height: 10px;
    width: 10px;
    background: #fff;
+   display: none;
+}
+
+.progress-bar-box:hover .circle-progress-bar{
+  display: block;
+}
+
+.progress-bar-box:hover .progress-value{
+  background: rgb(173, 255, 47);
+}
+
+.fas:hover, .far:hover{
+  transform: scale(1.2);
+  color: white;
 }
 
 .right-side{
@@ -326,7 +418,6 @@ width: 100%;
 
 .right-side ul li{
   display: inline-block;
-
 }
 
 .right-side a{
