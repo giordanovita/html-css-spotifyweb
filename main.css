@@ -35,6 +35,20 @@ ul{
   align-items: center;
 }
 
+.barra-upgrade a{
+  border: 1.5px solid white;
+  padding: 10px 35px;
+  border-radius: 20px;
+  margin-right: 20px;
+  font-weight: 500;
+  color: white;
+  font-size: 12px;
+  transition: scale(1.1);
+}
+
+.barra-upgrade span:hover{
+  transform: scale(1.1);
+}
 .aside-nav{
   width:250px;
   height: 85vh;
@@ -79,10 +93,40 @@ ul{
   font-size: 10px;
 }
 
+.user-profile>div:first-child{
+  width: 90%;
+  padding-bottom: 6px;
+  border-bottom:  1px solid rgb(163, 163, 163);
+
+}
+
+.user-profile img{
+  width: 25px;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 100%;
+  background-color: rgb(163, 163, 163);
+  margin: 8px 0;
+}
+
+.flexrow{
+  display: flex;
+  align-items: center;
+}
+.profile-name{
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
+  color: white;
+}
+
 .aside-nav a{
   color:rgb(163, 163, 163);
   font-weight: 600;
   font-size: 10px;
+}
+
+.fa-arrow-alt-circle-down{
+  margin-right: 6px;
 }
 
 .music-library{
@@ -91,7 +135,6 @@ ul{
   height: 75vh;
   overflow-y: scroll;
   background-color: rgb(20, 25, 34);
-
 }
 
 .music-library h2{
@@ -121,7 +164,6 @@ ul{
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 20px 0 30px 0;
-
 }
 
 .two{
@@ -151,14 +193,15 @@ width: 100%;
 
 .anteprima h4{
   padding: 10px 0 7px 0;
+  font-size: 14px;
 }
 .small-gray{
   color:rgb(125, 127, 132);
-  font-size: 12px;
+  font-size: 11px;
   font-weight:600 ;
 }
 
-
+/* regole footer */
 
 .music-player{
   width: 100%;
