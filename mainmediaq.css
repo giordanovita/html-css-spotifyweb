@@ -1,0 +1,123 @@
+/* questo foglio di stile ha il compito di regolare i vari comportamenti degli elementi al variere dei viewport  */
+
+/* regole per device md*/
+
+@media screen and (max-width:878px){
+  .one .anteprima{
+    width: calc(25%);
+    padding: 20px 26px 20px 0;
+  }
+
+  .one{
+    justify-content: flex-start;
+  }
+}
+
+
+
+/* regole per device s */
+
+@media screen and (max-width:639px){
+
+
+
+    .anteprima{
+      width: calc(50% - 20px);
+      padding: 20px 0;
+    }
+
+    .input-play ul{
+      display:flex;
+      justify-content: center;
+      align-items: baseline;
+      flex-wrap: nowrap;
+    }
+    .input-play a{
+      font-size: 11px;
+    }
+
+    .input-play .play{
+      font-size: 16px;
+    }
+
+    .left-side-icons ul{
+      padding-left: 22px;
+    }
+
+    .left-side img{
+      width: 37%;
+    }
+
+    .right-side .progress-bar-box{
+      min-width: 50%;
+    }
+
+    .right-side .progress-value{
+      min-width: 40%;
+    }
+
+}
+/* regole per device xs */
+
+@media screen and (max-width:552px){
+
+  /* regole gestione sidebar mobile */
+  .aside-nav{
+    display: none;
+  }
+
+  .side-bar-mobile{
+    width:60px;
+    height: calc(100vh - 94px);
+    background-color: rgb(0, 0, 0);
+    float: left;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+ .side-bar-mobile ul{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    padding-top: 20px;
+    flex-grow: 1;
+  }
+
+  .small-logo{
+    width: 37px;
+  }
+
+  .side-bar-mobile ul img{
+    width: 30px;
+  }
+
+  .user-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-mobile a{
+    color:white;
+  }
+
+   .user-mobile img{
+     margin-right:4px;
+   }
+
+   .music-library{
+     width: calc(100% - 60px);
+     height: calc(100vh - 60px - 94px);
+   }
+
+   .barra-upgrade {
+    width: calc(100% - 60px);
+  }
+
+  .left-side-icons ul{
+    padding-left: 11px;
+  }
+}

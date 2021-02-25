@@ -7,13 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mainmediaq.css">
     <title>SpotifyWeb</title>
   </head>
   <body>
-    <!-- barra con pulsante upgrade laterale e barra di navigazione centrale -->
     <!-- <header> -->
       <div class="row">
-
+      <!-- barra navigazione laterale -->
         <nav class="aside-nav">
           <a href="#">
             <img class="logo" src="img/logo.svg" alt="">
@@ -68,6 +68,39 @@
 
         </nav>
 
+        <!-- composizione sidebar mobile -->
+        <div class="side-bar-mobile">
+
+          <a href="#">
+            <img class="small-logo" src="img/logo-small.svg" alt="">
+          </a>
+          <ul>
+             <li>
+               <a href="#">
+                 <img src="img/home.svg" alt="">
+               </a>
+             </li>
+
+             <li>
+               <a href="#">
+                 <img src="img/libreria.svg" alt="">
+               </a>
+             </li>
+          </ul>
+
+
+
+          <div class="user-mobile">
+            <a href="#"><i class="far fa-arrow-alt-circle-down"></i></a>
+
+            <a href="#" class="flexrow">
+              <img src="img/profile.svg" alt="">
+            </a>
+          </div>
+
+        </div>
+
+
         <div class="barra-upgrade">
           <span><a href="#">EFFETTUA L'UPGRADE</a></span>
         </div>
@@ -84,7 +117,7 @@
           </ul>
 
           <h2>Recently played</h2>
-          <ul class="music-selection">
+          <ul class="music-selection one">
 
 
           <li class="anteprima">
@@ -203,12 +236,10 @@
 
 
 
-     </div>
+     <!-- </div> -->
     <!-- </header> -->
-    <main>
-      <!-- barra navigazione laterale -->
 
-    </main>
+
     <!-- barra inferiore con riproduzione musicale e barre d progressione -->
     <footer>
       <div class="music-player">
