@@ -2,28 +2,53 @@
 
 /* regole per device md*/
 
-@media screen and (max-width:878px){
-  .one .anteprima{
-    width: calc(25%);
-    padding: 20px 26px 20px 0;
+@media screen and (min-width:640px) and (max-width:878px){
+
+  .anteprima{
+    width: calc(25% - 10px);
+    padding-bottom: 30px;
   }
 
+  .one .anteprima{
+    margin-right: 10px;
+  }
+
+  .two{
+    margin-right: 10px;
+  }
   .one{
     justify-content: flex-start;
   }
+
+
 }
 
 
 
 /* regole per device s */
 
-@media screen and (max-width:639px){
+@media screen  and (min-width:553px) and (max-width:639px){
 
+    .appsections {
+      padding: 20px 0 20px 0;
+    }
 
+    .appsections li a{
+      font-size: 10px;
+    }
 
     .anteprima{
-      width: calc(50% - 20px);
-      padding: 20px 0;
+      width: calc(50% - 5px);
+      padding-bottom: 30px;
+    }
+
+    .two{
+      margin-right: 10px;
+    }
+
+    .small-gray{
+      white-space: nowrap;
+      font-size: 10px;
     }
 
     .input-play ul{
@@ -48,20 +73,32 @@
       width: 37%;
     }
 
+    .input-play li {
+      padding: 0 5px 0 5px;
+    }
+
     .right-side .progress-bar-box{
-      min-width: 50%;
+      min-width: 70%;
+    }
+
+    .right-side{
+      font-size: 14px;
     }
 
     .right-side .progress-value{
       min-width: 40%;
     }
 
+    .right-side a {
+      padding: 0 5px;
+   }
+
+
 }
 /* regole per device xs */
 
 @media screen and (max-width:552px){
 
-  /* regole gestione sidebar mobile */
   .aside-nav{
     display: none;
   }
@@ -113,6 +150,15 @@
      height: calc(100vh - 60px - 94px);
    }
 
+   .anteprima{
+     width: calc(50% - 5px);
+     padding-bottom: 30px;
+   }
+
+   .two{
+     margin-right: 10px;
+   }
+
    .barra-upgrade {
     width: calc(100% - 60px);
   }
@@ -120,4 +166,60 @@
   .left-side-icons ul{
     padding-left: 11px;
   }
+
+  .input-play a{
+    font-size: 12px;
+  }
+
+  .input-play .play{
+    font-size: 17px;
+  }
+
+  .input-play li {
+    padding: 0 6px 0 6px;
+  }
+
+  .left-side-icons ul{
+    padding-left: 10px;
+  }
+
+  .left-side{
+    font-size: 15px;
+  }
+
+  .left-side img{
+    width:37%;
+    padding: 0 5px;
+  }
+
+  .center-side .progress-bar{
+    width: 70%;
+  }
+
+  .center-side .progress-bar-box::after {
+    font-size: 7px;
+    padding-left: 5px;
+  }
+
+  .center-side .progress-bar-box::before {
+    font-size: 7px;
+    padding-right: 5px;
+  }
+
+  .right-side .progress-bar-box{
+    min-width: 70%;
+  }
+
+  .right-side .progress-value{
+    min-width: 40%;
+  }
+
+  .right-side{
+    font-size: 10px;
+  }
+
+  .right-side a {
+    padding: 0 3px;
+ }
+
 }

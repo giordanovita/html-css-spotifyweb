@@ -173,6 +173,8 @@ ul{
   margin-right: 6px;
 }
 
+/* regole main */
+
 .music-library{
   float: right;
   width:calc(100% - 250px);
@@ -226,19 +228,20 @@ ul{
   padding: 30px 0 40px 0;
 }
 
-.two{
-  justify-content: flex-start;
+.less{
+  display: flex;
+  justify-content:flex-start;
 }
 
-.two .anteprima, .ad{
+.two{
   margin-right: 26px;
+  justify-content: flex-start;
 }
 
 .anteprima{
   width: calc(100% / 6 - 20px);
-  min-width: 110px; */
+  min-width: 75px;
   min-height: 170px;
-  /* border: 1px solid black; */
   list-style-type: none;
   text-align: center;
 }
@@ -448,5 +451,5 @@ footer{
 }
 
 .right-side .progress-bar-box{
-  width: 30%;
+  width: 50%;
 }
