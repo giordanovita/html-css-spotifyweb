@@ -453,3 +453,20 @@ footer{
 .right-side .progress-bar-box{
   width: 50%;
 }
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background:rgb(197, 195, 196);
+}
+
+::-webkit-scrollbar-thumb {
+  background:rgb(128, 128, 128);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
